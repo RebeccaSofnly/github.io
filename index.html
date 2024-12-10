@@ -185,6 +185,28 @@ body {
     margin: 0 auto 1rem;
 }
 
+.contact-info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    background-color: rgba(255, 255, 240, 0.9); /* semi-transparent ivory */
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.contact-info a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -196,6 +218,11 @@ body {
     
     .tagline {
         display: none;
+    }
+
+    .contact-info {
+        font-size: 0.8rem;
+        padding: 8px 12px;
     }
 }
 
@@ -301,6 +328,10 @@ body {
         </div>
     </div>
 </section>
+
+<div class="contact-info">
+    We welcome your inquiries! Please contact us at <a href="mailto:info@sofnly.com">info@sofnly.com</a>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
