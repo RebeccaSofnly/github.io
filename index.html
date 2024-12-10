@@ -1,0 +1,330 @@
+<html><head><base href="https://sofnly.ca/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofnly Inc. - Premium Feminine Care Products | Made in Canada</title>
+
+<style>
+:root {
+    --primary-blue: #FFE4E1;  /* Blush peach */
+    --secondary-blue: #FFDAB9; /* Adjusted peach */
+    --accent-blue: #E9967A;   /* Darker peach */
+    --soft-white: #f8f9fa;
+    --text-dark: #2d3436;
+    --olive-green: #90A974;  /* Light olive green for bottom section */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: ivory;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: ivory;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.tagline {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: auto; /* This pushes the tagline to the right */
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem; /* Add some space between tagline and nav-links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue));
+    padding: 0 5%;
+    margin-top: 60px;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--text-dark);
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: ivory;
+    color: var(--accent-blue);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.section {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--olive-green);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background: ivory;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card h3 {
+    color: var(--accent-blue);
+    margin: 1rem 0;
+}
+
+.product-card p {
+    margin-bottom: 1.5rem;
+}
+
+.certification-badge {
+    width: 80px;
+    height: 80px;
+    margin: 1rem auto;
+}
+
+.values-section {
+    background-color: ivory;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.value-item {
+    padding: 2rem;
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        display: none;
+    }
+}
+
+.wave-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-svg {
+    fill: ivory;
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-content">
+        <div class="logo">Sofnly</div>
+        <div class="tagline">Safely, Softly, Canadian</div>
+        <div class="nav-links">
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <p>Thank you for visiting our website! We're currently building an exciting online experience that reflects our commitment to quality, comfort, and innovation. Stay tuned for updates as we prepare to launch our premium line of menstrual hygiene products designed with your well-being in mind. Be sure to check back soon for more details—you won't want to miss what's coming!</p>
+    </div>
+    <div class="wave-decoration">
+        <svg class="wave-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,170.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+</section>
+
+<section class="values-section">
+    <h2>Our Commitment to Excellence</h2>
+    <div class="values-grid">
+        <div class="value-item">
+            <svg class="value-icon" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent-blue)" stroke-width="2"/>
+                <path d="M30,50 L45,65 L70,35" stroke="var(--accent-blue)" stroke-width="3" fill="none"/>
+            </svg>
+            <h3>Quality Assured</h3>
+            <p>Rigorous testing and premium materials ensure the highest standards of safety and comfort.</p>
+        </div>
+        <div class="value-item">
+            <svg class="value-icon" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent-blue)" stroke-width="2"/>
+                <path d="M50,25 L50,75 M25,50 L75,50" stroke="var(--accent-blue)" stroke-width="3"/>
+            </svg>
+            <h3>Health Focused</h3>
+            <p>Developed with medical experts to support your overall well-being.</p>
+        </div>
+        <div class="value-item">
+            <svg class="value-icon" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent-blue)" stroke-width="2"/>
+                <path d="M35,65 C35,55 50,45 50,35 C50,45 65,55 65,65" fill="none" stroke="var(--accent-blue)" stroke-width="3"/>
+            </svg>
+            <h3>Eco-Conscious</h3>
+            <p>Sustainable practices and materials that care for you and the environment.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Premium Products</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <svg class="certification-badge" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent-blue)" stroke-width="2"/>
+                <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="var(--accent-blue)" font-size="12">Premium Quality</text>
+            </svg>
+            <h3>Ultra Comfort Series</h3>
+            <p>Advanced protection with innovative Canadian technology for ultimate comfort.</p>
+            <a href="https://sofnly.ca/shop/ultra-comfort" class="cta-button">Learn More</a>
+        </div>
+        
+        <div class="product-card">
+            <svg class="certification-badge" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent-blue)" stroke-width="2"/>
+                <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="var(--accent-blue)" font-size="12">Premium Quality</text>
+            </svg>
+            <h3>Natural Collection</h3>
+            <p>Safe products for a gentle, premium experience.</p>
+            <a href="https://sofnly.ca/shop/natural-collection" class="cta-button">Learn More</a>
+        </div>
+        
+        <div class="product-card">
+            <svg class="certification-badge" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent-blue)" stroke-width="2"/>
+                <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="var(--accent-blue)" font-size="12">Active Approved</text>
+            </svg>
+            <h3>Active Lifestyle</h3>
+            <p>Reliable protection designed for your dynamic lifestyle.</p>
+            <a href="https://sofnly.ca/shop/active-lifestyle" class="cta-button">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Navbar scroll effect
+    let navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(255, 245, 238, 0.95)'; // Changed to semi-transparent ivory
+        } else {
+            navbar.style.background = 'ivory';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
